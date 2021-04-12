@@ -2,6 +2,14 @@ const crypto = require('crypto')
 const Sequelize = require('sequelize')
 const db = require('../db')
 
+/*
+User has
+email - string
+pw - string
+multiple lists - array of different lists that contain stocks
+Market Data page for users only(not model dependent)
+*/
+
 const User = db.define('user', {
   email: {
     type: Sequelize.STRING,
